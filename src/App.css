@@ -52,6 +52,7 @@ h4 {
   padding: 0 30px;
 }
 .history {
+  margin: 8px;
   padding: 8px;
   display: flex;
   flex-direction: row;
@@ -84,4 +85,8 @@ input {
   background-color: blue;
   padding: 8px;
   border: 0;
+}
+
+.btn:disabled {
+  background-color: grey;
 }

@@ -1,7 +1,7 @@
 import "./App.css";
 import { Header } from "./components/header";
-import { Balance } from "./components/balance";
-import { History } from "./components/history";
+import Balance from "./components/balance";
+import History from "./components/history";
 import { NewTransaction } from "./components/add-new";
 function App() {
   return (
