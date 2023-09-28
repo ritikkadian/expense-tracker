@@ -16,6 +16,17 @@ class ExpenseStore {
       this.balance = Number(this.income) - Number(this.expense);
     });
   };
+
+  deleteHandler = (deleteItem) => {
+    runInAction(() => {
+      this.transactions = this.transactions.filter(
+        (item) => item.id !== deleteItem.id
+      );
+      if (deleteItem.amount > 0) this.income -= Number(deleteItem.amount);
+      else this.expense += Number(deleteItem.amount);
+      this.balance = Number(this.income) - Number(this.expense);
+    });
+  };
 }
 const expenseStore = new ExpenseStore();
 export default expenseStore;

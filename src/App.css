@@ -52,9 +52,10 @@ h4 {
   padding: 0 30px;
 }
 .history {
-  margin: 8px;
+  margin: 8px 0;
   padding: 8px;
   display: flex;
+  flex: 90%;
   flex-direction: row;
   justify-content: space-between;
   box-shadow: var(--box-shadow);
@@ -89,4 +90,16 @@ input {
 
 .btn:disabled {
   background-color: grey;
+}
+
+.delete-button {
+  padding: 4px;
+  margin: 8px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-button:hover {
+  background-color: red;
+  border-color: red;
 }
